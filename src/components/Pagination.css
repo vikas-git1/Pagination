@@ -1,0 +1,106 @@
+.app {
+  padding-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  /* width: 100vw; */
+}
+
+.item-container {
+  /* border: 2px solid black; */
+  height: auto;
+  background: grey;
+  margin: 30px 10px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  width: 25vw;
+  color: white;
+  cursor: pointer;
+}
+.img__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px 20px 20px;
+  flex-wrap: wrap;
+  /* margin: 10px 20px 20px 20px; */
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.293);
+}
+.img {
+  height: 20vh;
+  /* border: 2px solid black; */
+}
+.btn {
+  padding: 5px 10px;
+  width: 90px;
+  align-self: flex-end;
+  background-color: rgb(8, 90, 8);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  /* font-weight: bold; */
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+.original__price {
+  text-decoration: line-through;
+  color: rgba(190, 9, 9, 0.923);
+  margin-right: 10px;
+}
+.discount {
+  font-weight: bolder;
+}
+
+/* Pagination */
+.pagination {
+  /* border: 2px solid black; */
+  /* background: grey; */
+  margin: 0 auto;
+  height: 5vh;
+  width: 30vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page__number {
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  color: #007bff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.page__number:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.page__number.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.next__page,
+.prev__page {
+  cursor: pointer;
+}
+
+.pagination__disable {
+  opacity: 0;
+}
